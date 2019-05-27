@@ -1,0 +1,79 @@
+.people{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px calc((100% - 843px)/2);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.person{
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.photo{
+    position: relative;
+}
+.photo img {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: all 1s;
+}
+.person .extra{
+    display: none;
+    text-align: center;
+    font-family: Arial;
+    font-size: 21.6px;
+    line-height: 25px;
+    text-align: center;
+}
+.person:hover{
+    background: #EEEEEE;
+}
+.person:hover .photo img{
+    border-radius: 60px;
+}
+.person:hover .extra{
+    display: block;
+}
+.photo span{
+    position: absolute;
+    color: #8B0000;
+    background: white;
+    top: calc(50% - 16px);
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding-top: 9px;
+
+}
+.name{
+    display: block;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 23px;
+
+    text-align: center;
+
+    color: #2F4F4F;
+    text-align: center;
+}
+@media screen and (max-width: 878px) {
+    .people{
+        padding: 30px calc((100% - 430px)/2);
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .people{
+        justify-content: center;
+    }
+}
