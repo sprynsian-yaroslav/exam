@@ -1,2 +1,2 @@
 # exam
-[Preview](https://sprynsian-yaroslav.github.io/CryptoLanding/)<br>
+[Preview]( https://sprynsian-yaroslav.github.io/exam/)<br>
